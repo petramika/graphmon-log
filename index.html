@@ -15,16 +15,27 @@
             graph.addNode('influxdb', { url: 'https://influxdata.github.io/branding/img/logo-variations/influx-db.svg' });
             graph.addNode('telegraf', { url: 'https://influxdata.github.io/branding/img/logo-variations/telegraf.svg' });
             graph.addNode('chronograf', { url: 'https://influxdata.github.io/branding/img/logo-variations/chronograf.svg' });
-            graph.addNode('diyan', { url: 'https://secure.gravatar.com/avatar/01bce7702975191fdc402565bd1045a8?' });
-            graph.addNode('pocheptsov', { url: 'https://secure.gravatar.com/avatar/13da974fc9716b42f5d62e3c8056c718' });
-            graph.addNode('dimapasko', { url: 'https://secure.gravatar.com/avatar/8e587a4232502a9f1ca14e2810e3c3dd' });
+            graph.addNode('elasticsearch', { url: 'https://secure.gravatar.com/avatar/01bce7702975191fdc402565bd1045a8?' });
+            graph.addNode('datadogcloud', { url: 'https://secure.gravatar.com/avatar/13da974fc9716b42f5d62e3c8056c718' });
+            graph.addNode('datadogloggin', { url: 'https://secure.gravatar.com/avatar/8e587a4232502a9f1ca14e2810e3c3dd' });
+            graph.addNode('kibana', { url: 'https://secure.gravatar.com/avatar/8e587a4232502a9f1ca14e2810e3c3dd' });
+            graph.addNode('logstash', { url: 'https://secure.gravatar.com/avatar/8e587a4232502a9f1ca14e2810e3c3dd' });
+            graph.addNode('graphite', { url: 'https://secure.gravatar.com/avatar/8e587a4232502a9f1ca14e2810e3c3dd' });
+            graph.addNode('grafana', { url: 'https://secure.gravatar.com/avatar/8e587a4232502a9f1ca14e2810e3c3dd' });
+            graph.addNode('icinga', { url: 'https://secure.gravatar.com/avatar/8e587a4232502a9f1ca14e2810e3c3dd' });
 
             graph.addLink('influxdata', 'influxdb');
             graph.addLink('influxdata', 'telegraf');
             graph.addLink('influxdata', 'chronograf');
-            graph.addLink('influxdata', 'diyan');
-            graph.addLink('influxdata', 'pocheptsov');
-            graph.addLink('influxdata', 'dimapasko');
+            graph.addLink('datadogcloud', 'elasticsearch');
+            graph.addLink('datadogcloud', 'datadogloggin');
+            graph.addLink('kibana', 'elasticsearch');
+            graph.addLink('logstash', 'elasticsearch');
+            graph.addLink('graphite', 'grafana');
+            graph.addLink('graphite', 'icinga');
+            graph.addLink('graphite', 'influxdb');
+            graph.addLink('grafana', 'influxdb');
+            graph.addLink('grafana', 'elasticsearch');
 
             // Set custom nodes appearance
             var graphics = Viva.Graph.View.svgGraphics();
